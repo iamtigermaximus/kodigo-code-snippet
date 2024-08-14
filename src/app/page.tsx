@@ -4,20 +4,20 @@
 import Link from 'next/link';
 import { useAuth } from '@clerk/nextjs';
 import Image from 'next/image';
+import LandingImage from '../assets/kodigo-code-snippets.png';
 export default function Home() {
   return (
     <div className="poppins">
       <Navbar />
       <CTASection />
-      <div className="w-full flex justify-center items-center mt-10">
-        {/* <Image
-          src={'/app.jpg'}
+      <div className="w-full flex justify-center items-center mt-10 ">
+        <Image
+          src={LandingImage}
           alt="dashboard"
           width={900}
           height={400}
           className="shadow-xl aspect-auto sm:w-auto w-[398px] rounded-lg max-w-full   sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl"
-        /> */}
-        <h1>IMAGE DAPAT TO</h1>
+        />
       </div>
     </div>
   );
@@ -39,8 +39,8 @@ function Logo() {
         <DataObjectIcon sx={{ fontSize: 27, color: 'white' }} />
       </div> */}
       <div className="flex gap-1 text-[19px] ">
-        <span className={`font-bold text-purple-600`}>Snippet</span>
-        <span className="text-slate-600">Master</span>
+        <span className={`font-bold text-purple-600`}>KODIGO</span>
+        <span className="text-slate-600">code snippets</span>
       </div>
     </div>
   );
